@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :items
   resources :inventories
   resources :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+ 
+  # get '/user_by_name/:id', to: 'users#user_by_name'
 end
