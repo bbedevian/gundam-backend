@@ -3,8 +3,7 @@ class CreateGundams < ActiveRecord::Migration[6.0]
     create_table :gundams do |t|
       t.string :name
       t.integer :attack
-      t.integer :total_hp
-      t.integer :current_hp
+      t.integer :hp
       t.string :img_url
       t.string :rarity
       t.string :description

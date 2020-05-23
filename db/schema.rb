@@ -18,8 +18,7 @@ ActiveRecord::Schema.define(version: 2020_05_22_134711) do
   create_table "gundams", force: :cascade do |t|
     t.string "name"
     t.integer "attack"
-    t.integer "total_hp"
-    t.integer "current_hp"
+    t.integer "hp"
     t.string "img_url"
     t.string "rarity"
     t.string "description"
