@@ -26,9 +26,9 @@ Gundam.create(name: "Wing Zero Custom", attack: 1000, hp: 5000,
  UserGundam.create(user: User.first, gundam: Gundam.first)   
  UserGundam.create(user: User.first, gundam: Gundam.last)   
 
- Item.create(name: "Sword", price: 25)
- Item.create(name: "gun", price: 25)
- Item.create(name: "shield", price: 20)
+ Item.create(name: "Sword", price: 25, attack_bonus: 50)
+ Item.create(name: "gun", price: 25, attack_bonus: 100)
+ Item.create(name: "shield", price: 20, hp_bonus: 250)
 
 
  Inventory.create(user: User.first, item: Item.first)   
