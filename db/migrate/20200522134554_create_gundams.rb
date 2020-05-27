@@ -7,6 +7,7 @@ class CreateGundams < ActiveRecord::Migration[6.0]
       t.string :img_url
       t.string :rarity
       t.string :description
+      t.integer :price
 
       t.timestamps
     end

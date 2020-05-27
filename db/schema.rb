@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_05_22_134711) do
     t.string "img_url"
     t.string "rarity"
     t.string "description"
+    t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -65,7 +66,8 @@ ActiveRecord::Schema.define(version: 2020_05_22_134711) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.integer "balance"
+    t.integer "balance", default: 100
+    t.integer "level", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
