@@ -17,7 +17,7 @@ Opponent.destroy_all
 User.create(name: "Brett", balance: 50)
 
 Gundam.create(name: "Strike Freedom", attack: 200, hp: 1000, 
-    img_url: "https://cdn.shopify.com/s/files/1/0727/8355/products/61fhjHtZi7L._SL1500_900x900.jpg?v=1569526131", 
+    img_url: "https://www.kindpng.com/picc/b/177/1774211.png", 
     rarity: "epic", description: "Enhanced version of gundam Strike. Its a strike gundam with wings.")
 
 Gundam.create(name: "Wing Zero Custom", attack: 1000, hp: 5000, 
@@ -25,6 +25,10 @@ Gundam.create(name: "Wing Zero Custom", attack: 1000, hp: 5000,
     rarity: "Super Epic", description: "Destroys All other Gundams")
 
 Gundam.create(name: "Zaku-1", attack: 200, hp: 500, 
+    img_url: "https://www.pngkey.com/png/full/358-3589436_zaku-ii-armaments-origin-gundam-the-origin-.png", 
+    rarity: "Basic", description: "Just another Zaku")
+
+Gundam.create(name: "Zaku-2", attack: 600, hp: 800, 
     img_url: "https://www.pngkey.com/png/full/358-3589436_zaku-ii-armaments-origin-gundam-the-origin-.png", 
     rarity: "Basic", description: "Just another Zaku")
 
@@ -39,4 +43,5 @@ Gundam.create(name: "Zaku-1", attack: 200, hp: 500,
  Inventory.create(user: User.first, item: Item.first)   
  Inventory.create(user: User.first, item: Item.second) 
 
+ Opponent.create(wave: Gundam.third.id)
  Opponent.create(wave: Gundam.last.id)
