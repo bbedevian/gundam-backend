@@ -13,6 +13,7 @@ UserGundam.destroy_all
 Inventory.destroy_all 
 Opponent.destroy_all
 
+User.create(name: "GM", balance: 100000, level: 3)
 
 Gundam.create(name: "Zaku-1", attack: 200, hp: 500, 
     img_url: "https://www.pngkey.com/png/full/358-3589436_zaku-ii-armaments-origin-gundam-the-origin-.png", 
