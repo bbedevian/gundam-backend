@@ -13,7 +13,7 @@ UserGundam.destroy_all
 Inventory.destroy_all 
 Opponent.destroy_all
 
-User.create(name: "GM", balance: 100000, level: 3)
+User.create(name: "GM", balance: 100000, level: 0)
 
 Gundam.create(name: "Zaku-1", attack: 200, hp: 500, 
     img_url: "https://www.pngkey.com/png/full/358-3589436_zaku-ii-armaments-origin-gundam-the-origin-.png", 
@@ -39,6 +39,10 @@ Gundam.create(name: "Strike Freedom", attack: 200, hp: 1000, price: 150,
 img_url: "https://www.kindpng.com/picc/b/177/1774211.png", 
 rarity: "Mid", description: "Enhanced version of gundam Strike. Its a strike gundam with wings.")
 
+Gundam.create(name: "Unicorn", attack: 250, hp: 1250, price: 200,
+img_url: "https://cdn.shopify.com/s/files/1/2786/5582/products/pg-rx-0-unicorn-gundam-02_1_clipped_rev_1_1024x1024.png?v=1583634580", 
+rarity: "Mid", description: "Go to tokyo and check out the lifesize version...")
+
 Gundam.create(name: "Death Scythe", attack: 300, hp: 1500, price: 250,
 img_url: "https://i.ya-webdesign.com/images/transparent-death-scythe-6.png", 
 rarity: "Mid", description: "Joseph's favorite. That edgy guy thats always actin bad")
@@ -48,7 +52,7 @@ Gundam.create(name: "Exia", attack: 400, hp: 2000, price: 300,
     rarity: "Epic", description: "Hes got those dope transparent pieces")
 
 Gundam.create(name: "Wing Zero Custom", attack: 1000, hp: 5000, price: 500,
-    img_url: "https://i.etsystatic.com/15827791/r/il/d7073d/1883364185/il_1588xN.1883364185_sjga.jpg", 
+    img_url: "https://img.pngio.com/download-free-png-download-gundam-wing-zero-endless-waltz-gundam-wing-zero-png-1024_835.png", 
     rarity: "Legendary", description: "Destroys All other Gundams")
 
 
