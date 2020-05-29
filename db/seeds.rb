@@ -65,7 +65,7 @@ Gundam.create(name: "Wing Zero Custom", attack: 1000, hp: 5000, price: 500,
  Item.create(name: "Beam Shield", price: 80, hp_bonus: 500)
 
  Item.create(name: "Gun Blade Lance", price: 300, attack_bonus: 250)
- Item.create(name: "Substratospheric Altitude Cannon", price: 500, attack_bonus: 400)
+ Item.create(name: "Hyper Altitude Cannon", price: 500, attack_bonus: 400)
  Item.create(name: "XZ-2051 Custom", price: 200, hp_bonus: 1000)
 
 
