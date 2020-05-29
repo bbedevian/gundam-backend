@@ -13,48 +13,50 @@ UserGundam.destroy_all
 Inventory.destroy_all 
 Opponent.destroy_all
 
-User.create(name: "GM", balance: 100000, level: 0)
+User.create(name: "GM", balance: 2000000, level: 0)
 
 Gundam.create(name: "Zaku-1", attack: 200, hp: 500, 
-    img_url: "https://www.pngkey.com/png/full/358-3589436_zaku-ii-armaments-origin-gundam-the-origin-.png", 
+    img_url: "./Gundams/zaku1.png", 
     rarity: "Basic", description: "Just another Zaku")
 
 Gundam.create(name: "Zaku-2", attack: 400, hp: 650, 
-    img_url: "https://vignette.wikia.nocookie.net/gundam/images/f/f6/Zaku_II_Thunderbolt-ova.png/revision/latest?cb=20160421133002", 
+    img_url: "./Gundams/zaku2.png", 
     rarity: "Basic", description: "Just another Zaku")
 
 Gundam.create(name: "Graze Custom", attack: 600, hp: 1000, 
-    img_url: "https://i.pinimg.com/originals/60/52/d5/6052d57f0cbaa80f858e09638ed97f74.png", 
+    img_url: "./Gundams/graze.png", 
     rarity: "Basic", description: "Bretts favorite from Gundam IBO")
 
-Gundam.create(name: "Epyon", attack: 800, hp: 7500, 
-    img_url: "https://vignette.wikia.nocookie.net/deathbattle/images/3/31/Moble_Suit_Gundam_Wing_-_Gundam_Epyon_as_an_Action_Figure.png/revision/latest/scale-to-width-down/340?cb=20160613110016", 
+Gundam.create(name: "Dark Matter", attack: 800, hp: 7500, 
+    img_url: "./Gundams/darkmatter.png", 
     rarity: "Epic", description: "Big Boss Ricky Ross")
 
 Gundam.create(name: "Strike", attack: 100, hp: 700, price: 50,
-    img_url: "https://www.pngkit.com/png/full/227-2275713_strike-gundam-mobile-suit-gundam-seed-battle-assault.png", 
+    img_url: "./Gundams/strike.png", 
     rarity: "basic", description: "Starter for all users")
 
 Gundam.create(name: "Strike Freedom", attack: 200, hp: 1000, price: 150,
-img_url: "https://www.kindpng.com/picc/b/177/1774211.png", 
+img_url: "./Gundams/strikefreedom.png", 
 rarity: "Mid", description: "Enhanced version of gundam Strike. Its a strike gundam with wings.")
 
 Gundam.create(name: "Unicorn", attack: 250, hp: 1250, price: 200,
-img_url: "https://cdn.shopify.com/s/files/1/2786/5582/products/pg-rx-0-unicorn-gundam-02_1_clipped_rev_1_1024x1024.png?v=1583634580", 
+img_url: "./Gundams/unicorn.png", 
 rarity: "Mid", description: "Go to tokyo and check out the lifesize version...")
 
 Gundam.create(name: "Death Scythe", attack: 300, hp: 1500, price: 250,
-img_url: "https://i.ya-webdesign.com/images/transparent-death-scythe-6.png", 
+img_url: "./Gundams/deathscythe.png", 
 rarity: "Mid", description: "Joseph's favorite. That edgy guy thats always actin bad")
 
 Gundam.create(name: "Exia", attack: 400, hp: 2000, price: 300,
-    img_url: "https://pngimage.net/wp-content/uploads/2018/06/gundam-png-7.png", 
+    img_url: "./Gundams/exia.png", 
     rarity: "Epic", description: "Hes got those dope transparent pieces")
 
 Gundam.create(name: "Wing Zero Custom", attack: 1000, hp: 5000, price: 500,
-    img_url: "https://img.pngio.com/download-free-png-download-gundam-wing-zero-endless-waltz-gundam-wing-zero-png-1024_835.png", 
+    img_url: "./Gundams/wingzerocustom.png", 
     rarity: "Legendary", description: "Destroys All other Gundams")
 
+Gundam.create(name:"Coach Alex's spirit", attack: 9001, hp:1000000, price: 1333337, img_url:"./coachalex.png", 
+    rarity: "The one & only", description: "It's over 9000!!!")
 
  Item.create(name: "Basic Sword", price: 20, attack_bonus: 50)
  Item.create(name: "Basic Gun", price: 25, attack_bonus: 60)
